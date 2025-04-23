@@ -4,7 +4,7 @@
   <img src="https://github.com/aliaksparkh/Time-Series-Forecasting/blob/main/image1.png" width="500">
 </p>
 
-This repository presents a comparative time series forecasting study using two prominent models: **Seasonal ARIMA (SARIMA)** and **Facebook Prophet**. The analysis focuses on modeling monthly international airline passenger volumes, aiming to assess each model’s forecasting performance, interpretability, and suitability for real-world business applications.
+This repository presents a comparative time series forecasting study using two prominent models: **Seasonal ARIMA (SARIMA)** and **Prophet**. The analysis focuses on modeling monthly international airline passenger volumes, aiming to assess each model’s forecasting performance, interpretability, and suitability for real-world business applications.
 
 - 📘 [`ForecastingPassengers.ipynb`](https://github.com/aliaksparkh/Time-Series-Forecasting/blob/main/ForecastingPassengers.ipynb)  
   A comprehensive notebook outlining the exploratory analysis, feature engineering, model development, and performance evaluation.
@@ -37,12 +37,12 @@ To uncover underlying patterns and inform model selection, the following analyti
 
 ### 🔹 SARIMA (Seasonal ARIMA)
 
-- Leveraged `pmdarima.auto_arima` with AIC-based grid search to optimize seasonal and non-seasonal hyperparameters  
-- Trained on log-transformed, differenced series to ensure stationarity  
-- Captures multiplicative seasonality and autocorrelation dynamics with high precision
+- Leveraged AIC-based grid search to optimize seasonal and non-seasonal hyperparameters  
+- Trained on log-transformed series   
+- Captures multiplicative seasonality and trend with high precision
 
 <p align="center">
-  <img src="https://github.com/aliaksparkh/Time-Series-Forecasting/blob/main/sarima1.png" width="600">
+  <img src="https://github.com/aliaksparkh/Time-Series-Forecasting/blob/main/sarima_forecast.png" width="600">
 </p>
 
 ---
@@ -59,20 +59,20 @@ To uncover underlying patterns and inform model selection, the following analyti
 
 ---
 
-## 📈 Model Evaluation & Comparison
+## 📈 Models Evaluation & Comparison
 
 Performance was benchmarked using common regression metrics on a held-out test set:
 
 | Metric | SARIMA | Prophet |
 |--------|--------|---------|
-| **MAE** | 1,644.53 | 1,303.10 |
-| **RMSE** | 1,789.49 | 1,529.70 |
-| **MAPE** | 8.49% | 6.54% |
+| **MAE** | 927.14 | 1,303.10 |
+| **RMSE** | 1,196.16 | 1,529.70 |
+| **MAPE** | 4.68% | 6.54% |
 
-Prophet demonstrated superior performance across all evaluated metrics, particularly excelling in capturing trend shifts and nonlinear seasonal effects.
+SARIMA demonstrated superior performance across all evaluated metrics, particularly excelling in capturing trend shifts and nonlinear seasonal effects.
 
 <p align="center">
-  <img src="https://github.com/aliaksparkh/Time-Series-Forecasting/blob/main/sarima%20vs%20prophet.png" width="600">
+  <img src="https://github.com/aliaksparkh/Time-Series-Forecasting/blob/main/sarima_vs_prophet.png" width="600">
 </p>
 
 ---
