@@ -42,7 +42,7 @@ To uncover underlying patterns and inform model selection, the following analyti
 - Captures multiplicative seasonality and trend with high precision
 
 <p align="center">
-  <img src="https://github.com/aliaksparkh/Time-Series-Forecasting/blob/main/sarima_forecast.png" width="600">
+  <img src="https://github.com/aliaksparkh/Time-Series-Forecasting/blob/main/sarima_predicted.png" width="600">
 </p>
 
 ---
@@ -54,7 +54,7 @@ To uncover underlying patterns and inform model selection, the following analyti
 - Intuitive handling of trend changes and anomaly robustness
 
 <p align="center">
-  <img src="https://github.com/aliaksparkh/Time-Series-Forecasting/blob/main/prophet1.png" width="600">
+  <img src="https://github.com/aliaksparkh/Time-Series-Forecasting/blob/main/Prophet_Forecast.png" width="600">
 </p>
 
 ---
@@ -65,14 +65,14 @@ Performance was benchmarked using common regression metrics on a held-out test s
 
 | Metric | SARIMA | Prophet |
 |--------|--------|---------|
-| **MAE** | 927.14 | 1,303.10 |
-| **RMSE** | 1,196.16 | 1,529.70 |
-| **MAPE** | 4.68% | 6.54% |
+| **MAE** | 927.14 | 885.42 |
+| **RMSE** | 1,196.16 | 1,023.27 |
+| **MAPE** | 4.68% | 4.54% |
 
-SARIMA demonstrated superior performance across all evaluated metrics, particularly excelling in capturing trend shifts and nonlinear seasonal effects.
+Prophet model demonstrated superior performance across all evaluated metrics, particularly excelling in capturing trend shifts and nonlinear seasonal effects.
 
 <p align="center">
-  <img src="https://github.com/aliaksparkh/Time-Series-Forecasting/blob/main/sarima_vs_prophet.png" width="600">
+  <img src="https://github.com/aliaksparkh/Time-Series-Forecasting/blob/main/SARIMA_vs_Prophet_.png" width="600">
 </p>
 
 ---
